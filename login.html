@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styleLog.css" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-container">
+        <div class="login">
+          <h2>Inicio de sesion</h2>
+          <form action="">
+            <input type="text" placeholder="Correo" class="correo" />
+            <input type="password" placeholder="Contraseña" class="repass" />
+            <div class="button-container">
+              <input type="submit" class="submit" value="Iniciar" />
+              <input type="button" class="reg" value="Regresar" id="reg-link" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      const loginLink = document.getElementById("reg-link");
+      loginLink.addEventListener("click", function () {
+        window.location.href = "index.html";
+      });
+    </script>
+  </body>
+</html>
